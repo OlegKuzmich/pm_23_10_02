@@ -1,0 +1,46 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "extend";
+
+
+.sidebar-column{
+  padding: 70px 0 0 40px;
+}
+
+.about-me, .contact-info, .hobbies {
+  font-size: 21px;
+  position: relative;
+  letter-spacing: 2px;
+  font-family: v.$Oswald;
+  height: 20px;
+  margin-left: -60px;
+  margin-right: -60px;
+  padding: 0 60px;
+  line-height: 26px;
+  font-weight:500;
+  color: v.$grey-main-content;
+}
+
+ .arrow_n_h{
+    display: flex;
+    gap: 20px;
+    button{
+      z-index: 1;
+      background:none ;
+      border: none;
+    }
+  }
+
+.ribbon-bg-sidebar{
+  position: absolute;
+  height: 19px;
+  width: 290px;
+  margin:4.5px 0 0 -40px;
+  background-color: #F0F0F0;
+}
+
+@media screen and (width<=991px){
+  .ribbon-bg-sidebar{
+    width: 232px;
+  }
+}

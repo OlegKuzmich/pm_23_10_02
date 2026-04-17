@@ -1,0 +1,54 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "extend";
+@use "../../sidebar.scss";
+
+
+.section-block-contact {
+  .contact-info{
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 19px;
+      background-color: v.$yellow;
+      top: 5px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      background: v.$yellow;
+      width: 15px;
+      height: 2.5px; 
+      top: 23px;
+    }
+  }
+
+  p{
+    padding: 2px 0 0 0;
+    font-family: v.$Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    color: v.$grey-main-content;
+  }
+
+  .phone{
+    font-family: v.$Montserrat;
+    margin: 0 0 0 0;
+    padding: 25px 0 0 0;
+    font-weight: 700;
+  }
+  .email, .area{
+    font-family: v.$Montserrat;
+    margin: 0 0 0 0;
+    font-weight: 700;
+  }
+  .address{
+    font-family: v.$Montserrat;
+    margin: 0 0 85px 0;
+    
+  }
+}

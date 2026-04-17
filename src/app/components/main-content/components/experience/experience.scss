@@ -1,0 +1,66 @@
+@use "variables" as v;
+@use "../../main-content.scss";
+
+
+.section-block-experience {
+  .experience{
+    &::before {
+        content:"";
+        position: absolute;
+        width: 12px;
+        height: 18.9px;
+        background-color: v.$yellow;
+        left:0px;
+        bottom: -3.5px;
+      }
+
+      &::after {
+        content:"";
+        position: absolute;
+        background: v.$yellow;
+        width: 15px;
+        height: 2.5px;
+        bottom: -5px;
+      }
+  }
+  
+  .job-block{
+    padding: 22px 0 30px 0;
+  }
+  .job-entry{
+    padding: 0 0 40px 0;
+  }
+
+
+  .company-name{
+    font-weight: 500;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    margin: 14px 0 10px 0;
+  }
+
+  .present{
+    display: inline-block;
+    background-color: v.$yellow;
+    color: v.$grey-main-content;
+    padding: 2px 14px 2px 14px;
+    border-radius: 3.5px;
+    margin-right:10px ;
+    font-size: 13px;
+  }
+  .years{
+    display: inline-block;
+    background-color: v.$white-main-content;
+    color: v.$grey-main-content;
+    padding: 2px 14px 2px 14px;
+    border-radius: 3.5px;
+    margin-right:10px;
+    font-size: 13px;
+  }
+
+  p{
+    font-size: 13.5px;
+    font-weight: 300;
+    font-family: v.$Poppins;
+  }
+}
