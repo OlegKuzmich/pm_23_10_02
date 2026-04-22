@@ -1,17 +1,16 @@
 <section class="section-block-contact">
 
     <header>
-        <div class="ribbon-bg-sidebar"></div>
         <div class="arrow_n_h">
 
             <h3 class="contact-info">CONTACT INFO</h3>
 
-            <button (click)="openArrow()"><i class="arrow fa-solid fa-angle-down"></i></button>
+            <button (click)="toggleContact()"><i class="fa-solid" [class.fa-angle-right]="isContactVisible" [class.fa-angle-down]="!isContactVisible"></i></button>
 
         </div>
     </header>  
 
-    <div class="contact-info-body">
+    <div class="contact-info-body" [class.close]="isContactVisible">
         <h6 class="phone">PHONE</h6>
         <p>+000 123 456 789</p>
 

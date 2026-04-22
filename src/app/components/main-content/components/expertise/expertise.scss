@@ -9,10 +9,10 @@
         content:"";
         position: absolute;
         width: 12px;
-        height: 18.9px;
+        height: 23.5px;
         background-color: v.$yellow;
         left:0px;
-        bottom: -3.5px;
+        
       }
 
       &::after {
@@ -21,7 +21,7 @@
         background: v.$yellow;
         width: 15px;
         height: 2.5px;
-        bottom: -5px;
+        bottom: -4px;
       }
   }
 

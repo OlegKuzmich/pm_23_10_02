@@ -9,5 +9,10 @@ import { Component,Input } from '@angular/core';
 export class ContactInfo {
   @Input() address = "Your Street Address Here"; 
 
+  isContactVisible: boolean = false;
+
+  toggleContact(){
+    this.isContactVisible = !this.isContactVisible;
+  }
 
 }

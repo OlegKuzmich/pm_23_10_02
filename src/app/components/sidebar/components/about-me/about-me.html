@@ -1,22 +1,21 @@
 <section class="section-block-about">
 
     <header class="about-header">
-        <div class="ribbon-bg-sidebar"></div>
         <div class="arrow_n_h">
         
             <h3 class="about-me">
                 ABOUT ME
             </h3>
 
-            <button><i (click)="onArrow()" class="arrow fa-solid fa-angle-down"></i></button>
+            <button (click)="toggleAboutMe()"><i class="fa-solid" [class.fa-angle-right]="isAboutVisible" [class.fa-angle-down]="!isAboutVisible"></i></button>
         </div>
     </header>
 
-
+    
     @if(aboutMe){
-    <p class="about-text">
-        {{aboutMe}}
-    </p>  
-    }@else {<p class="about-text">No information about this worker</p>}
-
+        <p class="about-text" [class.close]="isAboutVisible">
+            {{aboutMe}}
+        </p>  
+    }@else {<p class="about-text" [class.close]="isAboutVisible">No information about this worker</p>}
+    
 </section>

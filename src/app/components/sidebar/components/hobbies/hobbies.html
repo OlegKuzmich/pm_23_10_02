@@ -1,15 +1,17 @@
 <section class="section-block-hobbies">
 
     <header>
-        <div class="ribbon-bg-sidebar"></div>
 
         <div class="arrow_n_h">
+
             <H3 class="hobbies">HOBBIES</H3>
-            <button><i class="arrow fa-solid fa-angle-down"></i></button>
+
+            <button (click)="toggleHobbies()"><i class="fa-solid" [class.fa-angle-right]="isHobbiesVisible" [class.fa-angle-down]="!isHobbiesVisible"></i></button>
+            
         </div>
     </header>
     
-    <div class="icons">
+    <div class="icons" [class.close]="isHobbiesVisible">
         <div class="d-flex justify-content-around flex-wrap">
 
             <div class="hobby-item" (click)="onHobby('Travel') ">

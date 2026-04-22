@@ -10,10 +10,10 @@
       display: block;
       position: absolute;
       width: 12px;
-      height: 19px;
+      height: 23.5px;
       background-color: v.$yellow;
       left: 20px;
-      top: 4.5px;
+      
       z-index: 1;
     }
     &::after{
@@ -24,16 +24,24 @@
       width: 15px;
       height: 2.5px;
       left:160px;
-      bottom: -5px;
+      bottom: -3px;
     }
   }
-  
-  p{
-    padding: 20px 40px 60px 0;
+ 
+  .about-text{
+    padding: 20px 40px 30px 40px;
     font-size: 12.9px;
     color: v.$grey-main-content;
     font-family: v.$Montserrat;
     font-weight: 400;
     letter-spacing: 1.2px;
+    transition: all 0.3s ease-in-out;
+    max-height: 400px;
+    &.close{
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 15px;
+    }
   }
 }

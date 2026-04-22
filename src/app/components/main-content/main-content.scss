@@ -13,25 +13,17 @@
 }
 
 .education,.experience,.expertise {
-  font-size:21px;
+  font-size:22px;
   position: relative;
   letter-spacing: 2.5px;
   font-family: v.$Oswald;
-  height: 20px;
+  height: 24px;
   margin-left: -60px;
   margin-right: -60px;
   padding: 0 60px;
-  line-height: 26px;
+  line-height: 22px;
   font-weight:500;
-}
-
-.ribbon-bg-main{
-  position: absolute;
-  height: 19px;
-  width: 100%;
-  margin:4.5px 0 0 -60px;
   background-color: v.$grey-ribbon-main;
-  
 }
 
 

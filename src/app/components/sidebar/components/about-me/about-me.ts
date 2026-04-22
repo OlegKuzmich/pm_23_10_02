@@ -9,9 +9,11 @@ import { EventEmitter } from '@angular/core';
 })
 export class AboutMe {
   
-  aboutMe:string="Lorem ipsum uterf hdey hhfdj rejjwqs"
+  aboutMe:string="Lorem ipsum uterf hello fit arrow djgh bjdyh hdibsp hgos hgpwh g dfsg s g ds gds g ds gd sg sd gd sg ds gd s gds g ds gds g ds gds g sd gds "
   
-  
- 
+  isAboutVisible: boolean = false; 
 
+  toggleAboutMe() {
+    this.isAboutVisible = !this.isAboutVisible;
+  }
 }

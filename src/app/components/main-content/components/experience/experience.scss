@@ -4,24 +4,25 @@
 
 .section-block-experience {
   .experience{
-    &::before {
-        content:"";
-        position: absolute;
-        width: 12px;
-        height: 18.9px;
-        background-color: v.$yellow;
-        left:0px;
-        bottom: -3.5px;
-      }
+  &::before {
+      content:"";
+      position: absolute;
+      width: 12px;
+      height: 23.5px;
+      background-color: v.$yellow;
+      left:0px;
+      
+    }
 
-      &::after {
-        content:"";
-        position: absolute;
-        background: v.$yellow;
-        width: 15px;
-        height: 2.5px;
-        bottom: -5px;
-      }
+    &::after {
+      content:"";
+      position: absolute;
+      background: v.$yellow;
+      width: 15px;
+      height: 2.5px;
+      bottom: -4px;
+    }
+
   }
   
   .job-block{

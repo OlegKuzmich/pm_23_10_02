@@ -13,4 +13,10 @@ export class Hobbies {
   onHobby(name:string){
     this.hobbyClicked.emit(name);
   }
+
+  isHobbiesVisible: boolean = false;
+
+  toggleHobbies(){
+    this.isHobbiesVisible=!this.isHobbiesVisible;
+  }
 }
