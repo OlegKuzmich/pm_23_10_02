@@ -1,0 +1,27 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.main-column{
+  padding: 0 0 0 40px;
+  color: v.$white-main-content;
+}
+
+.grey-rectangle{
+  position: relative;
+  padding: 70px 60px 60px 60px;
+  background-color: v.$grey-main-content;
+}
+
+.education,.experience,.expertise {
+  font-size:22px;
+  position: relative;
+  letter-spacing: 2.5px;
+  font-family: v.$Oswald;
+  height: 24px;
+  margin-left: -60px;
+  margin-right: -60px;
+  padding: 0 60px;
+  line-height: 22px;
+  font-weight:500;
+  background-color: v.$grey-ribbon-main;
+}

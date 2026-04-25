@@ -1,0 +1,43 @@
+@use "variables" as v;
+@use "../../main-content.scss";
+
+
+.section-block-education {
+
+  .education{
+    &::before {
+      content:"";
+      position: absolute;
+      width: 12px;
+      height: 23.5px;
+      background-color: v.$yellow;
+      left:0px;
+    }
+
+    &::after {
+      content:"";
+      position: absolute;
+      background: v.$yellow;
+      width: 15px;
+      height: 2.5px;
+      bottom: -4px;
+    }
+  }
+  
+
+  .enter-your-major {
+    padding-bottom: 75px;
+    font-family: v.$Poppins;
+
+    h6 {
+      padding: 27px 0 5px 0;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+}
