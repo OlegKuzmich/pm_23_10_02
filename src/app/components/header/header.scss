@@ -9,40 +9,42 @@
 
 .yellow-block{
   background: v.$yellow;
+  .white-small-rectangle{
+    position: absolute;
+    background-color: v.$white;
+    width: 130px;
+    height: 4.5px;
+    z-index: 2;
+    margin-top:238px;
+    margin-left: 16px;
+  }
+
+  .yellow-small-rectangle{
+    position: absolute;
+    background-color: v.$yellow;
+    width: 130px;
+    height: 5px;
+    margin-top:150px;
+    margin-left: -223px;
+    z-index: 0;
+  }
+
+  .black-small-rectangle{
+    background-color: v.$black;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    margin-top:100px;
+    margin-left: -127px;
+    z-index: 2;
+  }
 }
 
-.white-small-rectangle{
-  position: absolute;
-  background-color: v.$white;
-  width: 130px;
-  height: 4.5px;
-  z-index: 2;
-  margin-top:238px;
-  margin-left: 16px;
-}
-
-.yellow-small-rectangle{
-  position: absolute;
-  background-color: v.$yellow;
-  width: 130px;
-  height: 5px;
-  margin-top:150px;
-  margin-left: -223px;
-  z-index: 0;
-}
-
-.black-small-rectangle{
-  background-color: v.$black;
-  position: absolute;
-  width: 60px;
-  height: 3px;
-  margin-top:100px;
-  margin-left: -127px;
-  z-index: 2;
-}
 
 @media screen and (width<=991px) {
-  .yellow-small-rectangle {
-        margin-left: -200px;
+  .yellow-block{
+    .yellow-small-rectangle {
+      margin-left: -200px;
+    }
   }
 }

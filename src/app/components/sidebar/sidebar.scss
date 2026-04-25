@@ -21,24 +21,16 @@
   color: v.$grey-main-content;
 }
 
- .arrow_n_h{
-    height: 24px;
-    position: relative;
-    padding: 0 0 0 40px;
-    display: flex;
-    gap: 20px;
-    background-color: #F0F0F0;
-    button{
-      z-index: 1;
-      background:none ;
-      border: none;
-    }
-  }
-
-.ribbon-bg-sidebar{
-  position: absolute;
-  height: 19px;
-  width: 290px;
-  margin:4.5px 0 0 -40px;
+.arrow-n-head{
+  height: 24px;
+  position: relative;
+  padding: 0 0 0 40px;
+  display: flex;
+  gap: 20px;
   background-color: #F0F0F0;
+  button{
+    z-index: 1;
+    background:none ;
+    border: none;
+  }
 }

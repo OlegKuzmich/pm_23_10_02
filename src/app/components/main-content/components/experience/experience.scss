@@ -27,19 +27,17 @@
   
   .job-block{
     padding: 22px 0 30px 0;
+    .job-entry{
+      padding: 0 0 40px 0;
+      .company-name{
+        font-weight: 500;
+        font-size: 13.5px;
+        letter-spacing: 0.5px;
+        margin: 14px 0 10px 0;
+       }
+    }
   }
-  .job-entry{
-    padding: 0 0 40px 0;
-  }
-
-
-  .company-name{
-    font-weight: 500;
-    font-size: 13.5px;
-    letter-spacing: 0.5px;
-    margin: 14px 0 10px 0;
-  }
-
+  
   .present{
     display: inline-block;
     background-color: v.$yellow;

@@ -8,15 +8,18 @@ import { Output,EventEmitter } from '@angular/core';
   styleUrl: './hobbies.scss',
 })
 export class Hobbies {
-@Output() hobbyClicked = new EventEmitter<string>();
-
-  onHobby(name:string){
-    this.hobbyClicked.emit(name);
-  }
+  
 
   isHobbiesVisible: boolean = false;
 
   toggleHobbies(){
     this.isHobbiesVisible=!this.isHobbiesVisible;
+  }
+
+
+  
+  @Output() hobbyClicked = new EventEmitter<string>();
+  onHobby(name:string){
+    this.hobbyClicked.emit(name);
   }
 }
