@@ -12,10 +12,10 @@
     </header>
 
     
-    @if(aboutMe){
+    @if(about){
         <p class="about-text" [class.close]="isAboutVisible">
-            {{aboutMe}}
+            {{about}}
         </p>  
-    }@else {<p class="about-text" [class.close]="isAboutVisible">No information about this worker</p>}
+    }@else {<p class="about-text" [class.close]="isAboutVisible">No information about this person</p>}
     
 </section>

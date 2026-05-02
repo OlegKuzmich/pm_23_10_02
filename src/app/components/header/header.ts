@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Information } from './information/information';
 @Component({
   selector: 'app-header',
@@ -7,5 +7,5 @@ import { Information } from './information/information';
   styleUrl: './header.scss',
 })
 export class Header {
-
+  @Input() userData: any;
 }

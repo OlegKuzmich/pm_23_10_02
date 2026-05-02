@@ -7,8 +7,9 @@ import { Component,Input } from '@angular/core';
   styleUrl: './contact-info.scss',
 })
 export class ContactInfo {
-  @Input() address = "Your Street Address Here"; 
+  @Input() contactInfo: any;
 
+  
   isContactVisible: boolean = false;
 
   toggleContact(){

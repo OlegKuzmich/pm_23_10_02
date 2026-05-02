@@ -1,0 +1,55 @@
+{
+  "firstName": "MICHEL",
+  "lastName": "RIGAURIO",
+  "profession": "UI/UX Designer",
+  "education": [
+    {
+      "major": "Artist",
+      "universityName": "Harvard",
+      "years": "2011-2015"
+    },
+    {
+      "major": "UX Designer",
+      "universityName": "Oxford",
+      "years": "2001-2007"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Senior UI/UX Designer",
+      "period": "Present",
+      "isCurrent": true,
+      "company": "SoftServe / Lviv",
+      "description": "Very Good Worker"
+    },
+    {
+      "position": "Junior Designer",
+      "period": "2011-2019",
+      "isCurrent": false,
+      "company": "Previous Company / Kyiv",
+      "description": "Some Description"
+    }
+  ],
+  "expertise": [
+    {
+      "percent": 90,
+      "name": "Adobe<br>Photoshop"
+    },
+    {
+      "percent": 85,
+      "name": "Adobe<br>Illustrator"
+    },
+    {
+      "percent": 75,
+      "name": "Adobe<br>Indesign"
+    },
+    {
+      "percent": 80,
+      "name": "Power<br>Point"
+    }
+  ],
+  "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  "phone": "+000 123 456 789",
+  "email": "MICHELRIGAURIO@gmail.com",
+  "address": "Green 10"
+}

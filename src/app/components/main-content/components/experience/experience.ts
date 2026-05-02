@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -7,21 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './experience.scss',
 })
 export class Experience {
+  @Input() experience: any[]=[];
 
-  experienceList:any[] = [
-    {
-      position: 'Senior UI/UX Designer',
-      period: 'Present',
-      isCurrent: true,
-      company: 'SoftServe / Lviv',
-      description: 'Very Good Worker'
-    },
-    {
-      position: 'Junior Designer',
-      period: '2011-2019',
-      isCurrent: false,
-      company: 'Previous Company / Kyiv',
-      description: 'Some Description'
-    }
-  ];
 }
