@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Education } from './components/education/education';
 import { Experience } from './components/experience/experience';
 import { Expertise } from './components/expertise/expertise';
+import { Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-main-content',
@@ -10,5 +12,5 @@ import { Expertise } from './components/expertise/expertise';
   styleUrl: './main-content.scss',
 })
 export class MainContent {
-  
+  @Input() userData: any;
 }

@@ -9,15 +9,6 @@ import { Output,EventEmitter } from '@angular/core';
 })
 export class Hobbies {
   
-
-  isHobbiesVisible: boolean = false;
-
-  toggleHobbies(){
-    this.isHobbiesVisible=!this.isHobbiesVisible;
-  }
-
-
-  
   @Output() hobbyClicked = new EventEmitter<string>();
   onHobby(name:string){
     this.hobbyClicked.emit(name);

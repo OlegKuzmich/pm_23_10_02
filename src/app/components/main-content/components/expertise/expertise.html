@@ -1,36 +1,20 @@
 <section class="section-block-expertise">
 
-    <header>
-        <h5 class="expertise">EXPERTISE</h5>
-    </header>
+  <header>
+    <h5 class="expertise">EXPERTISE</h5>
+  </header>
 
 
-    <div class="expertise-list">
-
-        <div class="expertise-item">
-            <div class="circle p90">
-                <span>Adobe<br> Photoshop</span>
-            </div>
+  <div class="expertise-list">
+    @for (item of expertise; track item.name) {
+      <div class="expertise-item">
+        <div class="circle" [ngClass]="'p' + item.percent">
+          <span [innerHTML]="item.name"></span>
         </div>
-        
-        <div class="expertise-item">
-            <div class="circle p85">
-                <span>Adobe<br> Illustrator</span>
-            </div>
-        </div>
-        
-        <div class="expertise-item">
-            <div class="circle p75">
-                <span>Adobe<br> Indesign</span>
-            </div>
-        </div>
-        
-        <div class="expertise-item">
-            <div class="circle p80">
-                <span>Power<br> Point</span>
-            </div>
-        </div>
-        
-    </div>
+      </div>
+    } @empty {
+      <p>Навички ще завантажуються...</p>
+    }
+  </div>
 </section>
 

@@ -13,6 +13,8 @@
     font-weight: 400;
     line-height: 20px;
     color: v.$yellow-firstname;
+    border: none;
+    max-width: 280px;
   }
 
   .LastName {
@@ -21,6 +23,8 @@
     font-weight: 700;
     font-size: 40px;
     color: v.$gray;
+    border: none;
+    max-width: 280px;
   }
 
   .subtitle {

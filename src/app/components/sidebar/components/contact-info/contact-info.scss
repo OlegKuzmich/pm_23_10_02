@@ -1,11 +1,10 @@
 @use "variables" as v;
-@use "mixins" as m;
-@use "extend";
 @use "../../sidebar.scss";
 
 
 .section-block-contact {
   .contact-info{
+    white-space: nowrap;
     &::before {
       content: "";
       position: absolute;
@@ -62,3 +61,4 @@
     }
   } 
 }
+

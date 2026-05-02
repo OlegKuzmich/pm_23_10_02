@@ -12,13 +12,13 @@
 
     <div class="contact-info-body" [class.close]="isContactVisible">
         <h6 class="phone">PHONE</h6>
-        <p>+000 123 456 789</p>
+        <p>{{contactInfo.phone}}</p>
 
         <h6 class="email">EMAIL</h6>
-        <p>urname@gmail.com</p>
+        <p>{{contactInfo.email}}</p>
 
         <h6 class="area">AREA</h6>
-        <p class="address">{{address}}</p>
+        <p class="address">{{contactInfo.address}}</p>
     </div>
 
 </section>

@@ -1,5 +1,4 @@
 @use "variables" as v;
-@use "mixins" as m;
 @use "extend";
 @use "../../sidebar.scss";
 
@@ -58,14 +57,6 @@
       font-family: v.$Montserrat;
       font-weight: 500;
     }
-    transition: all 0.3s ease-in-out;
-    max-height: 400px;
-    &.close{
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-      padding: 15px;
-      pointer-events: none;
-    }
+    
   }
 }

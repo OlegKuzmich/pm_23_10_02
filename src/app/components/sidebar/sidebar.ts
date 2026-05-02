@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { AboutMe } from './components/about-me/about-me';
 import { ContactInfo } from './components/contact-info/contact-info';
 import { Hobbies } from './components/hobbies/hobbies';
@@ -10,6 +10,9 @@ import { Hobbies } from './components/hobbies/hobbies';
   styleUrl: './sidebar.scss',
 })
 export class Sidebar {
+  @Input() userData: any;
+
+
   showAlert(hobby:string){
     alert(`Hobby clicked: ${hobby}`)
 
