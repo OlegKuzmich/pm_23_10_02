@@ -33,19 +33,19 @@
   "expertise": [
     {
       "percent": 90,
-      "name": "Adobe<br>Photoshop"
+      "name": "Adobe Photoshop"
     },
     {
-      "percent": 85,
-      "name": "Adobe<br>Illustrator"
+      "percent": 88,
+      "name": "Adobe Illustrator"
     },
     {
-      "percent": 75,
-      "name": "Adobe<br>Indesign"
+      "percent": 70,
+      "name": "Adobe Indesign"
     },
     {
-      "percent": 80,
-      "name": "Power<br>Point"
+      "percent": 77,
+      "name": "Power Point"
     }
   ],
   "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",

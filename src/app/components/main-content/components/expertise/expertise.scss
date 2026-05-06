@@ -44,6 +44,8 @@
     font-size: 10px;
     font-weight: 300;
     line-height: 1.1;
+    --percent: 0%;
+
 
     span {
       color: white;
@@ -68,9 +70,7 @@
       transform: translate(-50%, -50%);
     }
 
-    &.p90 { @include m.circle-gradient(90%); }
-    &.p85 { @include m.circle-gradient(85%); }
-    &.p80 { @include m.circle-gradient(80%, 160deg); }
-    &.p75 { @include m.circle-gradient(75%, 180deg); }
+    @include m.circle-gradient(var(--percent));
+    
   }
 } 

@@ -8,8 +8,8 @@
   <div class="expertise-list">
     @for (item of expertise; track item.name) {
       <div class="expertise-item">
-        <div class="circle" [ngClass]="'p' + item.percent">
-          <span [innerHTML]="item.name"></span>
+        <div class="circle" [style.--percent]="item.percent + '%'">
+          <span [innerText]="item.name"></span>
         </div>
       </div>
     } @empty {
