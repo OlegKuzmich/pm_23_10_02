@@ -12,14 +12,12 @@ import { DataService } from './services/data'; // Додали імпорт се
   styleUrl: './app.scss'
 })
 
-export class App implements OnInit { // Додали implements OnInit
+export class App implements OnInit { 
   
-  userData: any; // Змінна для зберігання даних з сервера
+  userData: any;
 
-  // Додаємо конструктор для підключення сервісу
   constructor(private dataService: DataService, private cd: ChangeDetectorRef) {}
 
-  // Ця функція запуститься сама при старті програми
   ngOnInit() {
     this.dataService.getUserData().subscribe({
       next: (data) => {
@@ -31,20 +29,6 @@ export class App implements OnInit { // Додали implements OnInit
       },
       error: (err) => {
         console.error('Сервер не відповідає:', err);
-      }
-    });
-  }
-
-
-  saveData() {
-    this.dataService.saveUserData(this.userData).subscribe({
-      next: (response) => {
-        alert('Дані успішно збережено!');
-        console.log(response.message);
-      },
-      error: (err) => {
-        console.error('Помилка при збереженні:', err);
-        alert('Не вдалося зберегти дані.');
       }
     });
   }

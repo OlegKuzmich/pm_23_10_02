@@ -44,8 +44,12 @@
       "name": "Adobe Indesign"
     },
     {
-      "percent": 77,
-      "name": "Power Point"
+      "name": "Power Point",
+      "percent": 77
+    },
+    {
+      "name": "Word",
+      "percent": 30
     }
   ],
   "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",

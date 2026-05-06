@@ -3,11 +3,24 @@
   <header>
     <h5 class="expertise">EXPERTISE</h5>
   </header>
+  
+  <div class="add-skill-form">
+    <form [formGroup]="skillForm" (ngSubmit)="addSkill()">
+        <input class="input-name" formControlName="name" placeholder="Skill">
+        <input class="input-percent" type="number" formControlName="percent" placeholder="%">
+        
+        <button class="btn-add" type="submit" [disabled]="skillForm.invalid">Add</button>
 
+        <div *ngIf="skillForm.get('name')?.invalid && skillForm.get('name')?.touched">
+            <small style="color: red;">The name must be more than 2 characters</small>
+        </div>
+    </form>
+  </div>
 
   <div class="expertise-list">
-    @for (item of expertise; track item.name) {
+    @for (item of expertise; track item.name; let i = $index) {
       <div class="expertise-item">
+        <button class="btn-delete" (click)="deleteSkill(i)"><span class="close-icon">&times;</span></button>
         <div class="circle" [style.--percent]="item.percent + '%'">
           <span [innerText]="item.name"></span>
         </div>

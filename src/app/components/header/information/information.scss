@@ -3,7 +3,7 @@
 
 .header-information {
   padding-top: 90px;
-  padding-bottom: 83px;
+  padding-bottom: 30px;
   padding-left: 40px;
 
   .FirstName {
@@ -19,6 +19,7 @@
 
   .LastName {
     font-family: v.$Montserrat;
+    margin-bottom: 5px;
     display: block;
     font-weight: 700;
     font-size: 40px;
@@ -34,7 +35,28 @@
     letter-spacing: 0.8px;
     color: v.$gray;
   }
-
+  .btn-save{
+    margin-bottom: 20px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: v.$yellow;
+    color: v.$gray;
+    font-family: v.$Montserrat;
+    font-weight: 600;
+    &:hover{
+      transform: scale(1.04);
+    }
+    &:disabled {
+      background-color: #cccccc; 
+      color: #666666;
+      cursor: default; 
+      opacity: 0.7;
+      transform: scale(1); 
+    }
+  }
+  .error-msg{
+    color: red;
+  }
   img {
     position: absolute;
     max-width: 175px;
@@ -43,6 +65,7 @@
     z-index: 1;
   }
 }
+
 
 @media screen and (width<=991px) {
   .header-information img{

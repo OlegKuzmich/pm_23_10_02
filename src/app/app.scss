@@ -15,18 +15,3 @@
 .footer-colum-2{
   background-color: v.$yellow;
 }
-
-.btn-save{
-  position: absolute;
-  border-color: black;
-  margin-top: -60px;
-  margin-left: 40px;
-  border-radius: 10px;
-  background-color: v.$yellow;
-  color: v.$gray;
-  font-family: v.$Montserrat;
-  font-weight: 600;
-  &:hover{
-    transform: scale(1.04);
-  }
-}

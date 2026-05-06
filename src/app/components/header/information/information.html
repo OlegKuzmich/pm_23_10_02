@@ -1,14 +1,26 @@
 <section class="header-information">
-    
-    <h1>
-        <input class="FirstName" [(ngModel)]="userData.firstName" placeholder="First Name">
-        <input class="LastName" [(ngModel)]="userData.lastName" placeholder="Last Name">
-    </h1>
+    <form #userForm="ngForm" autocomplete="off" spellcheck="false">
+        
+        <div>
+            <div *ngIf="firstName.invalid && firstName.touched" class="error-msg">
+                <small *ngIf="firstName.errors?.['minlength']">First name must be at least 3 characters long</small>
+            </div>
 
-    
+            <input type="text" required #firstName="ngModel" minlength="3" name="firstName" class="FirstName" [(ngModel)]="userData.firstName" placeholder="First Name">
+
+            <div *ngIf="lastName.invalid && lastName.touched" class="error-msg">
+                <small *ngIf="lastName.errors?.['minlength']">Last name must be at least 3 characters long</small>
+            </div>
+
+            <input required #lastName="ngModel" minlength="3" name="lastName" class="LastName" [(ngModel)]="userData.lastName" placeholder="Last Name">
+        </div>
+
+        <button (click)="saveData()" class="btn-save" [disabled]="userForm.invalid">Save Changes</button>
+    </form>
+
     <p class="subtitle">{{userData.profession}}</p>
+    
+    
 
-    
-    
     <img src="Imgs/image.jpg" alt="Michel Rigaurio">
 </section>
