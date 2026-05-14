@@ -6,10 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  // Це адреса твого Node.js сервера, який ти створив раніше
-  private apiUrl = 'http://localhost:3000/api/user';
-
   constructor(private http: HttpClient) { }
+
+  private apiUrl = 'http://localhost:3000/api/user';
 
   // Метод для отримання даних з JSON-файлу (GET-запит)
   getUserData(): Observable<any> {

@@ -4,13 +4,10 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-// Налаштування
-app.use(cors()); // Дозволяє Angular звертатися до сервера
-app.use(express.json()); // Дозволяє отримувати дані у форматі JSON
-
+app.use(cors());
+app.use(express.json());
 const DATA_FILE = './data.json';
 
-// --- GET запит: Читаємо дані з файлу і віддаємо їх Angular ---
 app.get('/api/user', (req, res) => {
     fs.readFile(DATA_FILE, 'utf8', (err, data) => {
         if (err) {
@@ -20,7 +17,6 @@ app.get('/api/user', (req, res) => {
     });
 });
 
-// --- POST запит: Отримуємо дані від Angular і записуємо у файл ---
 app.post('/api/user', (req, res) => {
     const updatedData = req.body;
     
