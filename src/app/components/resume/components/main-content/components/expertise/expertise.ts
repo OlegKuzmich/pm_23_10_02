@@ -1,7 +1,7 @@
 import { Component,Input,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-import { DataService } from '../../../../services/data';
+import { DataService } from '../../../../../../services/data';
 
 @Component({
   selector: 'app-expertise',

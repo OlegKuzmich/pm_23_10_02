@@ -43,8 +43,10 @@
     color: v.$gray;
     font-family: v.$Montserrat;
     font-weight: 600;
+    transition: 0.3s;
     &:hover{
-      transform: scale(1.04);
+      transition: 0.3s;
+      background-color: rgb(207, 148, 20);
     }
     &:disabled {
       background-color: #cccccc; 

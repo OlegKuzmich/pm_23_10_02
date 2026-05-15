@@ -1,0 +1,47 @@
+@use  "variables" as v;
+
+
+.login-container{
+    margin: 250px auto;
+    width: 100%;
+    box-shadow: 0 0 50px v.$shadow;
+    max-width: 600px;
+    height: 450px;
+    background-color: v.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     // Центрує елементи горизонтально
+    justify-content: center; // Центрує елементи вертикально
+    position: relative;      // Для позиціонування заголовка "Login"
+    div:first-child { // Це ваше слово "Login"
+        position: absolute;
+        top: 30px;      // Відступ від верхнього краю
+        left: 50%;
+        transform: translateX(-50%); // Точне центрування
+        font-family: v.$Montserrat;
+        font-weight: bold;
+        font-size: 24px;
+   }
+}
+
+.userInput, .passwordInput{
+    width: 200px;
+    display: block;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: v.$Montserrat;
+    border: v.$grey-ribbon-main solid 2px;
+}
+.btnConfirm{
+    font-family: v.$Montserrat;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: v.$yellow;
+    transition: 1s;
+    font-weight: 500;
+    &:hover{
+        transition: 0.3s;
+        background-color: rgb(207, 148, 20);
+    }
+}

@@ -28,6 +28,24 @@ app.post('/api/user', (req, res) => {
     });
 });
 
+app.post('/api/login', (req, res) => {
+  const { username, password } = req.body;
+
+  fs.readFile(DATA_FILE, 'utf8', (err, data) => {
+    if (err) return res.status(500).send({ message: "Помилка сервера" });
+
+    const jsonData = JSON.parse(data);
+    // Шукаємо користувача в масиві
+    const user = jsonData.users.find(u => u.username === username && u.password === password);
+
+    if (user) {
+      res.send({ success: true, message: "Вхід дозволено!" });
+    } else {
+      res.status(401).send({ success: false, message: "Невірний логін або пароль" });
+    }
+  });
+});
+
 app.listen(PORT, () => {
     console.log(`Бекенд-сервіс запущено на http://localhost:${PORT}`);
 });
