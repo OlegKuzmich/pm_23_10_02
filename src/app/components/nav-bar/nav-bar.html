@@ -1,0 +1,11 @@
+<nav>
+  <a class="MyResumeApp" href="#">MyResumeApp</a>
+  <!-- <button class="MyResumeApp" (click)="onBrandClick()">MyResumeApp</button> -->
+  <button *ngIf="authService.isLoggedIn()" (click)="onLogout()" class="exit">
+    EXIT
+  </button>
+
+  @if(!authService.isLoggedIn()){}
+   
+  
+</nav>
