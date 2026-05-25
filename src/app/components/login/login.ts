@@ -22,14 +22,11 @@ export class Login {
 
   onLogin() {
     if (this.loginForm.valid) {
-    // Передаємо дані форми (username та password) у сервіс
     this.authService.login(this.loginForm.value).subscribe({
       next: (response) => {
-        // Якщо сервер відповів успішно — переходимо на резюме
         this.router.navigate(['/resume']);
       },
       error: (err) => {
-        // Якщо логін/пароль невірні — показуємо помилку
         console.error('Вхід не вдався', err);
         alert('Невірний логін або пароль!');
       }

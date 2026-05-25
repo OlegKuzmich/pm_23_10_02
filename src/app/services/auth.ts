@@ -7,14 +7,12 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
- private http = inject(HttpClient); // Додали це
+ private http = inject(HttpClient);
   private router = inject(Router);
 
   isLoggedIn = signal<boolean>(localStorage.getItem('isLoggedIn') === 'true');
 
-  // Оновлений метод
   login(credentials: any): Observable<any> {
-    // Відправляємо дані на сервер (порт 3000, як у твоєму server.js)
     return this.http.post('http://localhost:3000/api/login', credentials).pipe(
       tap((res: any) => {
         if (res.success) {

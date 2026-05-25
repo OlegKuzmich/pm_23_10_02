@@ -10,14 +10,14 @@
     background-color: v.$white;
     display: flex;
     flex-direction: column;
-    align-items: center;     // Центрує елементи горизонтально
-    justify-content: center; // Центрує елементи вертикально
-    position: relative;      // Для позиціонування заголовка "Login"
-    div:first-child { // Це ваше слово "Login"
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    div:first-child {
         position: absolute;
-        top: 30px;      // Відступ від верхнього краю
+        top: 30px;
         left: 50%;
-        transform: translateX(-50%); // Точне центрування
+        transform: translateX(-50%); 
         font-family: v.$Montserrat;
         font-weight: bold;
         font-size: 24px;

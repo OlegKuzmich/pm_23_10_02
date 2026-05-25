@@ -9,8 +9,8 @@
       "password": "password125"
     }
   ],
-  "firstName": "MICHEL",
-  "lastName": "RIGAURIO",
+  "firstName": "ANNA",
+  "lastName": "SHIMCHUCK",
   "profession": "UI/UX Designer",
   "education": [
     {
@@ -41,22 +41,6 @@
     }
   ],
   "expertise": [
-    {
-      "percent": 90,
-      "name": "Adobe Photoshop"
-    },
-    {
-      "percent": 88,
-      "name": "Adobe Illustrator"
-    },
-    {
-      "percent": 70,
-      "name": "Adobe Indesign"
-    },
-    {
-      "name": "Power Point",
-      "percent": 77
-    },
     {
       "name": "Word",
       "percent": 70
