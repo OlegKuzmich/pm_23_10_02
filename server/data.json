@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "123"
+    },
+    {
+      "username": "michel",
+      "password": "password125"
+    }
+  ],
+  "firstName": "ANNA",
+  "lastName": "SHIMCHUCK",
+  "profession": "UI/UX Designer",
+  "education": [
+    {
+      "major": "Artist",
+      "universityName": "Harvard",
+      "years": "2011-2015"
+    },
+    {
+      "major": "UX Designer",
+      "universityName": "Oxford",
+      "years": "2001-2007"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Senior UI/UX Designer",
+      "period": "Present",
+      "isCurrent": true,
+      "company": "SoftServe / Lviv",
+      "description": "Very Good Worker"
+    },
+    {
+      "position": "Junior Designer",
+      "period": "2011-2019",
+      "isCurrent": false,
+      "company": "Previous Company / Kyiv",
+      "description": "Some Description"
+    }
+  ],
+  "expertise": [
+    {
+      "name": "Word",
+      "percent": 70
+    }
+  ],
+  "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  "phone": "+000 123 456 789",
+  "email": "MICHELRIGAURIO@gmail.com",
+  "address": "Green 10"
+}

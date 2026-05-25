@@ -1,0 +1,145 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "../../main-content.scss";
+
+
+.section-block-expertise {
+  .expertise{
+    &::before {
+        content:"";
+        position: absolute;
+        width: 12px;
+        height: 23.5px;
+        background-color: v.$yellow;
+        left:0px;
+        
+      }
+
+      &::after {
+        content:"";
+        position: absolute;
+        background: v.$yellow;
+        width: 15px;
+        height: 2.5px;
+        bottom: -4px;
+      }
+  }
+  .add-skill-form{
+    margin-top: 30px;
+
+    .input-name{
+      background-color: v.$white-main-content;
+      border-radius: 10px;
+      border: none;
+      width: 100px;
+      margin-right: 20px;
+    }
+    .input-percent{
+      background-color: v.$white-main-content;
+      border-radius: 10px;
+      border: none;
+      width: 100px;
+      margin-right: 20px;
+    }
+    .btn-add{
+      border: 2px solid black;
+      
+      border-radius: 10px;
+      background-color: v.$yellow;
+      color: v.$gray;
+      font-family: v.$Montserrat;
+      font-weight: 600;
+      transition: 0.3s;
+      &:hover{
+        transition: 0.3s;
+        background-color: rgb(207, 148, 20);
+      }
+      &:disabled {
+        background-color: #cccccc; 
+        color: #666666;
+        cursor: default; 
+        opacity: 0.7;
+        transform: scale(1); 
+      }
+    }
+  }
+  
+
+  .expertise-list {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .expertise-item {
+    flex: 0 0 auto;
+    text-align: center;
+    margin: 10px;
+  }
+  .btn-delete {
+    position: absolute;
+    z-index: 2;
+    background: #ff4444; 
+    color: white;
+    border: 2px solid black; 
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  .close-icon {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  
+
+  transform: translateY(-1px); 
+}
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.1;
+    --percent: 0%;
+
+
+    span {
+      color: white;
+      text-align: center;
+      font-family: v.$Montserrat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 78%;
+      z-index: 2;
+    }
+    &::after {
+      content: "";
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: v.$grey-main-content;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @include m.circle-gradient(var(--percent));
+    
+  }
+} 

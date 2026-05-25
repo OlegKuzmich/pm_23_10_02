@@ -1,0 +1,24 @@
+<section class="section-block-contact">
+
+    <header>
+        <div class="arrow-n-head">
+
+            <h3 class="contact-info">CONTACT INFO</h3>
+
+            <button (click)="toggleContact()"><i class="fa-solid" [class.fa-angle-right]="isContactVisible" [class.fa-angle-down]="!isContactVisible"></i></button>
+
+        </div>
+    </header>  
+
+    <div class="contact-info-body" [class.close]="isContactVisible">
+        <h6 class="phone">PHONE</h6>
+        <p>{{contactInfo.phone}}</p>
+
+        <h6 class="email">EMAIL</h6>
+        <p>{{contactInfo.email}}</p>
+
+        <h6 class="area">AREA</h6>
+        <p class="address">{{contactInfo.address}}</p>
+    </div>
+
+</section>

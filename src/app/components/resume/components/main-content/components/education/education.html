@@ -1,0 +1,16 @@
+<section class="section-block-education">
+    
+    <header>
+        <h5 class="education">EDUCATION</h5>
+    </header>
+  
+
+    <div class="row enter-your-major">
+        @for(item of education; track item.name){
+            <div class="col-6 ">
+                <h6>MAJOR: {{item.major}}</h6>
+                <p>University: {{item.universityName}}<br>Years: {{item.years}}</p>
+            </div>
+        }
+    </div>
+</section>

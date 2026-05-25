@@ -1,0 +1,9 @@
+<nav>
+  <a class="MyResumeApp" href="#">MyResumeApp</a>
+  <button *ngIf="authService.isLoggedIn()" (click)="onLogout()" class="exit">
+    EXIT
+  </button>
+
+  @if(!authService.isLoggedIn()){}
+   
+</nav>

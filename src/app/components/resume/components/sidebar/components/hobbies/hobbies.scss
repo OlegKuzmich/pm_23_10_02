@@ -1,0 +1,62 @@
+@use "variables" as v;
+@use "extend";
+@use "../../sidebar.scss";
+
+
+.section-block-hobbies {
+  .hobbies{
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 23.5px;
+      background-color: v.$yellow;
+      left: 20px;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: v.$yellow;
+      width: 15px;
+      height: 2.5px;
+      bottom: -2px;
+    }
+  }
+  
+
+  .icons {
+    padding: 30px 30px 0 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    .hobby-item {
+      &:hover{
+        transform: scale(1.1);
+      }
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      .hobby-icon {
+        color: v.$yellow;
+        width: 33px;
+        height: 33px;
+        border: 2px solid v.$yellow;
+        border-radius: 50%;
+        @extend %flex-center;
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+      }
+      
+    }
+
+    p {
+      font-size: 13px;
+      margin: 0; color: v.$grey-main-content;
+      font-family: v.$Montserrat;
+      font-weight: 500;
+    }
+    
+  }
+}

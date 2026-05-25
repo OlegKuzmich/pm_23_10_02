@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@use  "variables" as v;
+
+app-root, app-header, app-main-content, app-sidebar{
+  display: contents;
+}
+
+.resume-bg {
+  background: v.$resume-bg;
+}
+
+@media screen and (width<=767px) {
+  .resume-inner{
+    width: 696px;
+  }
+  body{
+    overflow-x: auto;
+  }
+}
