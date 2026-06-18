@@ -9,8 +9,8 @@
       "password": "password125"
     }
   ],
-  "firstName": "ANNA",
-  "lastName": "SHIMCHUCK",
+  "firstName": "MICHEL",
+  "lastName": "RIGAURIO",
   "profession": "UI/UX Designer",
   "education": [
     {
@@ -44,6 +44,14 @@
     {
       "name": "Word",
       "percent": 70
+    },
+    {
+      "name": "PowerPoint",
+      "percent": 70
+    },
+    {
+      "name": "SQL",
+      "percent": 45
     }
   ],
   "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",

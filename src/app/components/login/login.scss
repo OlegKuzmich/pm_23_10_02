@@ -30,7 +30,7 @@
     margin: 20px;
     border-radius: 10px;
     font-family: v.$Montserrat;
-    border: v.$grey-ribbon-main solid 2px;
+    border: v.$gray solid 2px;
 }
 .btnConfirm{
     font-family: v.$Montserrat;
@@ -44,4 +44,13 @@
         transition: 0.3s;
         background-color: rgb(207, 148, 20);
     }
+}
+
+.error-message {
+    position: absolute;
+    top: 100px;
+    color: #d32f2f;
+    font-family: v.$Montserrat;
+    font-size: 12px;
+    font-weight: 500;
 }

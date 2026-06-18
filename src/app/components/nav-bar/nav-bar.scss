@@ -7,7 +7,7 @@ nav{
     align-items: center;            
     height: 50px;
     background-color:v.$gray ;
-    color:v.$white-main-content;
+    color:v.$white;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -17,13 +17,13 @@ nav{
     font-family: v.$Montserrat;
     border: none;
     background: none;
-    color: v.$white-main-content;
+    color: v.$white;
     margin: 10px 50px;
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
     &:hover{
-        color:rgb(173, 173, 173)
+        color:rgb(173, 173, 173);
     }
 }
 
@@ -32,11 +32,11 @@ nav{
     justify-content: flex-end;
     border: none;
     background: none;
-    color: v.$white-main-content;
+    color: v.$white;
     margin: 10px 150px;
     font-weight: 600;
     font-size: 20px;
     &:hover{
-        color:rgb(255, 120, 120)
+        color:rgb(255, 120, 120);
     }
 }

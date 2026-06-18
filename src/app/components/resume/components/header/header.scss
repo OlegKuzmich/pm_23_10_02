@@ -41,7 +41,7 @@
 }
 
 
-@media screen and (width<=991px) {
+@media screen and (max-width: 991px) {
   .yellow-block{
     .yellow-small-rectangle {
       display: none;

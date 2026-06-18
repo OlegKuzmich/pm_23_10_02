@@ -1,5 +1,10 @@
 <div class="login-container">
   <div>Login</div>
+  @if(showErrorMessage){
+    <div class="error-message">
+      Невірний логін або пароль!
+    </div>
+  }
   <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
     
     <input class="userInput" type="text" formControlName="username" placeholder="Username">

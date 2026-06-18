@@ -29,18 +29,17 @@
   .about-text{
     padding: 20px 40px 30px 40px;
     font-size: 12.9px;
-    color: v.$grey-main-content;
+    color: v.$gray;
     font-family: v.$Montserrat;
     font-weight: 400;
     letter-spacing: 1.2px;
-    transition: all 0.3s ease-in-out;
-    max-height: 500px;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+    max-height: 1000px;
+    overflow: hidden;
     &.close{
       max-height: 0;
       opacity: 0;
-      overflow: hidden;
-      padding: 8px;
-      transform: scaleY(0.5);
+      padding: 0 40px;
     }
   }
 }

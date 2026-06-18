@@ -13,6 +13,7 @@ import { AuthService } from '../../services/auth';
 export class Login {
   private authService = inject(AuthService);
   private router = inject(Router);
+  showErrorMessage = false;
 
   // Створюємо групу полів, які Angular буде відстежувати
   loginForm = new FormGroup({
@@ -27,8 +28,10 @@ export class Login {
         this.router.navigate(['/resume']);
       },
       error: (err) => {
-        console.error('Вхід не вдався', err);
-        alert('Невірний логін або пароль!');
+        this.showErrorMessage = true;
+        setTimeout(() => {
+          this.showErrorMessage = false;
+        }, 4000);
       }
     });
     

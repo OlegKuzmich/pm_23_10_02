@@ -6,10 +6,10 @@ app-root, app-header, app-main-content, app-sidebar{
 }
 
 .resume-bg {
-  background: v.$resume-bg;
+  background: #e4e4e4;
 }
 
-@media screen and (width<=767px) {
+@media screen and (max-width: 767px) {
   .resume-inner{
     width: 696px;
   }

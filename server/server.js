@@ -6,7 +6,7 @@ const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
-const DATA_FILE = './data.json';
+const DATA_FILE = './server/data.json';
 
 app.get('/api/user', (req, res) => {
     fs.readFile(DATA_FILE, 'utf8', (err, data) => {
